@@ -79,22 +79,22 @@ shasum -a 512 kibana-8.10.2-amd64.deb
 
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
-#### if you get any error during the instalation like this one: 
+#### 1. if you get any error during the instalation like this one: 
 " dpkg: error: dpkg frontend lock was locked by another process with pid 1426
 
 Note: removing the lock file is always wrong, and can end up damaging the
 
 locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>. "
 
-#### RUN This to Check for Running dpkg or apt Processes: 
+#### 2. RUN This to Check for Running dpkg or apt Processes: 
 
 ps aux | grep -E '(dpkg|apt)'
 
-##### If you are certain that there are no package management tasks running, RUN THIS:
+##### 3. If you are certain that there are no package management tasks running, RUN THIS:
 
 sudo rm /var/lib/dpkg/lock
 
-#### Then RUN DPKG Again: 
+#### 4. Then RUN DPKG Again: 
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
