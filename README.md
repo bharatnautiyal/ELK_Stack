@@ -1,6 +1,6 @@
 # Install Elasticsearch on Ubuntu for Next Level Searching
 
-# Installing Java on Ubuntu
+## Installing Java on Ubuntu
 
 Before getting your hands on Elasticsearch, you’ll first have to install Java on your server. Java installation is required for Elasticsearch to run.
 You’ll install OpenJDK, the open-source Java Development Kit (JDK). This JDK is the recommended Java development environment for Elasticsearch.
@@ -12,7 +12,7 @@ sudo apt install default-jdk -y
 java -version
 
 
-# Install Elasticsearch on Ubuntu
+## Install Elasticsearch on Ubuntu
 
 sudo apt-get install apt-transport-https -y
 
@@ -25,7 +25,7 @@ sudo apt update -y
 sudo apt install elasticsearch -y
 
 
-# Configuring Elasticsearch
+## Configuring Elasticsearch
 
 sudo nano /etc/elasticsearch/elasticsearch.yml
 
@@ -53,7 +53,7 @@ netstat -plntu | grep "9200"
 
 
 
-# Optional
+## Optional
 
 Securing Elasticsearch Using UFW Firewall
 
