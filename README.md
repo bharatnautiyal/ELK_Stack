@@ -62,3 +62,43 @@ sudo ufw allow from 192.168.1.200 to any port 9200
 Now, run the ufw status command below to check the status of your UFW firewall.
 
 sudo ufw status verbose
+
+.
+
+.
+
+.
+
+# Download and install the Debian package of Kibana manually
+
+The Debian package for Kibana v8.10.1 can be downloaded from the website and installed as follows:
+
+wget https://artifacts.elastic.co/downloads/kibana/kibana-8.10.2-amd64.deb
+shasum -a 512 kibana-8.10.2-amd64.deb 
+sudo dpkg -i kibana-8.10.2-amd64.deb
+
+if you get any error during the instalation like this one: 
+"
+dpkg: error: dpkg frontend lock was locked by another process with pid 1426
+Note: removing the lock file is always wrong, and can end up damaging the
+locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>.
+"
+
+Here's how you can check and resolve this-> Check for Running dpkg or apt Processes: RUN This
+
+ps aux | grep -E '(dpkg|apt)'
+
+If you are certain that there are no package management tasks running, RUN THIS COMMAND:
+
+sudo rm /var/lib/dpkg/lock
+
+Then RUN DPKG Again: 
+
+sudo dpkg -i kibana-8.10.2-amd64.deb
+
+
+
+For Refrence
+https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
+
+
