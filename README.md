@@ -85,11 +85,11 @@ sudo dpkg -i kibana-8.10.2-amd64.deb
 Note: removing the lock file is always wrong, and can end up damaging the
 locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>. "
 
-#### Here's how you can check and resolve this-> RUN This to Check for Running dpkg or apt Processes: 
+#### RUN This to Check for Running dpkg or apt Processes: 
 
 ps aux | grep -E '(dpkg|apt)'
 
-#### If you are certain that there are no package management tasks running, RUN THIS COMMAND:
+###### If you are certain that there are no package management tasks running, RUN THIS COMMAND:
 
 sudo rm /var/lib/dpkg/lock
 
