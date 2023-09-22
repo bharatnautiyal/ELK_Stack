@@ -71,8 +71,6 @@ sudo ufw status verbose
 
 .
 
-.
-
 # Download and install the Debian package of Kibana manually
 
 The Debian package for Kibana v8.10.1 can be downloaded from the website and installed as follows:
