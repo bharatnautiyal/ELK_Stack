@@ -90,7 +90,7 @@ locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>.
 
 ps aux | grep -E '(dpkg|apt)'
 
-##### 3. If you are certain that there are no package management tasks running, RUN THIS:
+#### 3. If you are certain that there are no package management tasks running, RUN THIS:
 
 sudo rm /var/lib/dpkg/lock
 
