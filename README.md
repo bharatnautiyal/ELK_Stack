@@ -61,4 +61,5 @@ Securing Elasticsearch Using UFW Firewall
 sudo ufw allow from 192.168.1.200 to any port 9200
 
 Now, run the ufw status command below to check the status of your UFW firewall.
+
 sudo ufw status verbose
