@@ -98,7 +98,7 @@ Then RUN DPKG Again:
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
-# For Latest The Debian package for Kibana can be downloaded from the website:
+# Latest Kibana Debian package Can be downloaded from the website:
 
 https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 
