@@ -71,10 +71,12 @@ sudo ufw status verbose
 
 .
 
-# Download and install the Debian package of Kibana manually
+# Download and install the Debian package of Kibana v8.10.1 manually
 
 wget https://artifacts.elastic.co/downloads/kibana/kibana-8.10.2-amd64.deb
+
 shasum -a 512 kibana-8.10.2-amd64.deb 
+
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 if you get any error during the instalation like this one: 
@@ -83,7 +85,7 @@ if you get any error during the instalation like this one:
 Note: removing the lock file is always wrong, and can end up damaging the
 locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>. "
 
-Here's how you can check and resolve this-> Check for Running dpkg or apt Processes: RUN This
+Here's how you can check and resolve this-> RUN This to Check for Running dpkg or apt Processes: 
 
 ps aux | grep -E '(dpkg|apt)'
 
@@ -96,7 +98,7 @@ Then RUN DPKG Again:
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
-# The Debian package for Kibana v8.10.1 can be downloaded from the website and installed as follows:
+# For Latest The Debian package for Kibana can be downloaded from the website:
 
 https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 
