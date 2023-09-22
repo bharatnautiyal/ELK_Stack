@@ -1,4 +1,4 @@
-# Steps to Install ELK Stack
+# Setup ELK Stack
 
 ## Installing Java on Ubuntu
 
