@@ -35,7 +35,6 @@ Save the changes and exit your editor.
 <img src="https://adamtheautomator.com/wp-content/uploads/2022/04/image-653.png" alt="image" width="700">
 
 
-
 sudo systemctl daemon-reload
 
 sudo systemctl restart elasticsearch
