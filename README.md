@@ -1,4 +1,4 @@
-# Install Elasticsearch on Ubuntu for Next Level Searching
+# Steps to Install ELK Stack
 
 ## Installing Java on Ubuntu
 
