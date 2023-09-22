@@ -73,8 +73,6 @@ sudo ufw status verbose
 
 # Download and install the Debian package of Kibana manually
 
-The Debian package for Kibana v8.10.1 can be downloaded from the website and installed as follows:
-
 wget https://artifacts.elastic.co/downloads/kibana/kibana-8.10.2-amd64.deb
 shasum -a 512 kibana-8.10.2-amd64.deb 
 sudo dpkg -i kibana-8.10.2-amd64.deb
@@ -99,8 +97,8 @@ Then RUN DPKG Again:
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
+# The Debian package for Kibana v8.10.1 can be downloaded from the website and installed as follows:
 
-For Refrence
 https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 
 
