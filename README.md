@@ -90,16 +90,15 @@ locked area and the entire system. See <https://wiki.debian.org/Teams/Dpkg/FAQ>.
 
 ps aux | grep -E '(dpkg|apt)'
 
-##### If you are certain that there are no package management tasks running, RUN THIS COMMAND:
+##### If you are certain that there are no package management tasks running, RUN THIS:
 
 sudo rm /var/lib/dpkg/lock
 
 #### Then RUN DPKG Again: 
-
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
-## Latest Kibana Debian package Can be downloaded from the website:
+### Latest Kibana Debian package Can be downloaded from the website:
 
 https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 
