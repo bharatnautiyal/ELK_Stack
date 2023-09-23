@@ -51,8 +51,6 @@ netstat -plntu | grep "9200"
 <img src="https://adamtheautomator.com/wp-content/uploads/2022/04/image-655.png" alt="image" width="900">
 
 
-
-
 ## Optional
 
 Securing Elasticsearch Using UFW Firewall
@@ -63,13 +61,22 @@ Now, run the ufw status command below to check the status of your UFW firewall
 
 sudo ufw status verbose
 
-.
+
+# Latest Elasticsearch Debian package Can be installed from the website:
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
+
 
 .
 
 .
 
 .
+
+.
+
+.
+
 
 # Download and install the Debian package of Kibana v8.10.1 manually
 
@@ -78,6 +85,8 @@ wget https://artifacts.elastic.co/downloads/kibana/kibana-8.10.2-amd64.deb
 shasum -a 512 kibana-8.10.2-amd64.deb 
 
 sudo dpkg -i kibana-8.10.2-amd64.deb
+
+
 
 ## Optional
 
@@ -100,17 +109,25 @@ sudo rm /var/lib/dpkg/lock
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
-## Latest Kibana Debian package Can be downloaded from the website:
 
+## Latest Kibana Debian package Can be installed from the website:
+
+https://www.elastic.co/guide/en/kibana/current/deb.html#deb
+
+### For installing Manually
 https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 
-.
 
 .
 
 .
 
 .
+
+.
+
+.
+
 
 # Installing Logstash from Package Repositories
 
