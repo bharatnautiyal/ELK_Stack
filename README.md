@@ -1,6 +1,6 @@
-# Setup ELK Stack
+# Setup ELK Stack for Ubuntu 22.04
 
-## Installing Java on Ubuntu 2
+## Installing Java
 
 Before getting your hands on Elasticsearch, you’ll first have to install Java and Nginx on your server. Java installation is required for Elasticsearch to run.
 
