@@ -66,6 +66,9 @@ sudo ufw status verbose
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
 
+### For installing Manually
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install-deb
 
 .
 
@@ -76,7 +79,6 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
 .
 
 .
-
 
 # Download and install the Debian package of Kibana v8.10.1 manually
 
@@ -114,10 +116,6 @@ sudo dpkg -i kibana-8.10.2-amd64.deb
 
 https://www.elastic.co/guide/en/kibana/current/deb.html#deb
 
-### For installing Manually
-https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
-
-
 .
 
 .
@@ -127,7 +125,6 @@ https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 .
 
 .
-
 
 # Installing Logstash from Package Repositories
 
