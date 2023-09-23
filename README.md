@@ -40,8 +40,7 @@ sudo apt install elasticsearch -y
 
 sudo nano /etc/elasticsearch/elasticsearch.yml
 
-Uncomment the network.host line by removing the leading # symbol and replacing its value with localhost. Doing so increases security by restricting outside access to your Elasticsearch instance.
-Save the changes and exit your editor.
+Uncomment the network.host line and replacing its value with localhost.
 
 <img src="https://adamtheautomator.com/wp-content/uploads/2022/04/image-653.png" alt="image" width="700">
 
