@@ -12,8 +12,11 @@ sudo apt install default-jdk -y
 java -version
 
 .
+
 .
+
 .
+
 .
 
 # Install Nginx
