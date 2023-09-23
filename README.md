@@ -81,7 +81,7 @@ sudo dpkg -i kibana-8.10.2-amd64.deb
 
 # Optional
 
-### if you get any error during the instalation like this one: 
+### If you get any error during the instalation like this one: 
 " dpkg: error: dpkg frontend lock was locked by another process with pid 1426
 
 Note: removing the lock file is always wrong, and can end up damaging the
