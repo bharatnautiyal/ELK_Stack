@@ -62,7 +62,7 @@ Now, run the ufw status command below to check the status of your UFW firewall
 sudo ufw status verbose
 
 
-# Latest Elasticsearch Debian package Can be installed from the website:
+## Latest Elasticsearch Debian package Can be installed from the website:
 
 https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html
 
