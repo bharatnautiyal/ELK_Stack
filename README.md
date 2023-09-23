@@ -79,7 +79,7 @@ shasum -a 512 kibana-8.10.2-amd64.deb
 
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
-# Optional
+## Optional
 
 ### If you get any error during the instalation like this one: 
 " dpkg: error: dpkg frontend lock was locked by another process with pid 1426
