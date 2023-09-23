@@ -100,7 +100,7 @@ sudo rm /var/lib/dpkg/lock
 sudo dpkg -i kibana-8.10.2-amd64.deb
 
 
-### Latest Kibana Debian package Can be downloaded from the website:
+## Latest Kibana Debian package Can be downloaded from the website:
 
 https://www.elastic.co/guide/en/kibana/current/deb.html#install-deb
 
@@ -131,7 +131,7 @@ echo "deb [signed-by=/usr/share/keyrings/elastic-keyring.gpg] https://artifacts.
 sudo apt-get update && sudo apt-get install logstash
 
 
-### Latest Logstash Debian package Can be installed from the website:
+## Latest Logstash Debian package Can be installed from the website:
 
 https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#installing-logstash
 
