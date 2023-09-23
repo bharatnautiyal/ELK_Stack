@@ -2,8 +2,7 @@
 
 ## Installing Java on Ubuntu 2
 
-Before getting your hands on Elasticsearch, you’ll first have to install Java on your server. Java installation is required for Elasticsearch to run.
-You’ll install OpenJDK, the open-source Java Development Kit (JDK). This JDK is the recommended Java development environment for Elasticsearch.
+Before getting your hands on Elasticsearch, you’ll first have to install Java and Nginx on your server. Java installation is required for Elasticsearch to run.
 
 sudo apt update -y
 
