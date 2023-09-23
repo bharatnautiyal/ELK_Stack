@@ -1,6 +1,6 @@
 # Setup ELK Stack
 
-## Installing Java on Ubuntu
+## Installing Java on Ubuntu 2
 
 Before getting your hands on Elasticsearch, you’ll first have to install Java on your server. Java installation is required for Elasticsearch to run.
 You’ll install OpenJDK, the open-source Java Development Kit (JDK). This JDK is the recommended Java development environment for Elasticsearch.
@@ -10,6 +10,15 @@ sudo apt update -y
 sudo apt install default-jdk -y
 
 java -version
+
+.
+.
+.
+.
+
+# Install Nginx
+
+sudo apt-get -y install nginx
 
 
 ## Install Elasticsearch on Ubuntu
@@ -149,5 +158,11 @@ sudo apt-get update && sudo apt-get install logstash
 
 https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#installing-logstash
 
+
+## Install Filebeat
+
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.10.2-amd64.deb
+
+sudo dpkg -i filebeat-8.10.2-amd64.deb
 
 
