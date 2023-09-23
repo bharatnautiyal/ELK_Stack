@@ -159,6 +159,13 @@ sudo apt-get update && sudo apt-get install logstash
 
 https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#installing-logstash
 
+.
+
+.
+
+.
+
+.
 
 ## Install Filebeat
 
