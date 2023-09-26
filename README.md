@@ -13,7 +13,6 @@ java -version
 ## Install Nginx
 
 sudo apt-get -y install nginx
-
 .
 
 .
