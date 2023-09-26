@@ -22,7 +22,6 @@ sudo apt-get -y install nginx
 
 .
 
-
 ## Install Elasticsearch on Ubuntu
 
 sudo apt-get install apt-transport-https -y
