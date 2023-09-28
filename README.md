@@ -156,7 +156,6 @@ sudo apt-get update && sudo apt-get install logstash
 ## Latest Logstash Debian package Can be installed from the website:
 
 https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#installing-logstash
-
 .
 
 .
