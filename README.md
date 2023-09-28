@@ -90,11 +90,22 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install
 
 # Download and install the Debian package of Kibana v8.10.1 manually
 
-wget https://artifacts.elastic.co/downloads/kibana/kibana-8.10.2-amd64.deb
+sudo apt update
 
-shasum -a 512 kibana-8.10.2-amd64.deb 
+sudo apt install kibana
 
-sudo dpkg -i kibana-8.10.2-amd64.deb
+
+### uncomment this in kibana.yml 
+
+sudo nano /etc/kibana/kibana.yml
+
+elasticsearch.hosts: ["http://localhost:9200"]
+
+### Configure the server host and port for Kibana. 
+
+By default, Kibana will listen on localhost at port 5601. If you want to make Kibana accessible from outside the local machine, you can set the server.host to your server's IP address:
+
+server.host: "your_server_ip"
 
 
 
