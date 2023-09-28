@@ -182,3 +182,15 @@ curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.10.2
 sudo dpkg -i filebeat-8.10.2-amd64.deb
 
 
+
+# Creating Auth for Kibana
+
+## setingup password for kibana on nginx
+
+sudo apt-get install -y apache2-utils
+
+sudo htpasswd -c /etc/nginx/htpasswd.users user_name  # enter username in "user_name"
+
+Then it prompt for Enter password.
+
+
