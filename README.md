@@ -189,8 +189,11 @@ sudo dpkg -i filebeat-8.10.2-amd64.deb
 
 sudo apt-get install -y apache2-utils
 
-sudo htpasswd -c /etc/nginx/htpasswd.users user_name  # enter username in "user_name"
+### Enter username in "user_name"
 
-Then it prompt for Enter password.
+sudo htpasswd -c /etc/nginx/htpasswd.users user_name   
+
+##### Then Enter password.
+
 
 
