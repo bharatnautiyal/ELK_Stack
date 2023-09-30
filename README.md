@@ -12,7 +12,7 @@ java -version
 
 ## Install Nginx
 
-sudo apt-get -y install nginx  #### testme
+sudo apt-get -y install nginx
 
 .
 
