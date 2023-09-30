@@ -145,7 +145,7 @@ sudo nano /etc/nginx/sites-available/kibana
 ### Then Past This Configuration
 
 
-
+"
 
 server {
 
@@ -169,7 +169,7 @@ server {
 
 }
 
-
+"
 
 
 .
