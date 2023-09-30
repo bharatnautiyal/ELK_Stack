@@ -5,9 +5,7 @@
 Before getting your hands on Elasticsearch, you’ll first have to install Java and Nginx on your server. Java installation is required for Elasticsearch to run.
 
 sudo apt update -y
-
 sudo apt install default-jdk -y
-
 java -version
 
 ## Install Nginx
