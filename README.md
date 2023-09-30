@@ -143,9 +143,9 @@ https://www.elastic.co/guide/en/kibana/current/deb.html#deb
 sudo nano /etc/nginx/sites-available/kibana
 
 ### Then Past This Configuration
+{
 
 
-"
 
 server {
 
@@ -169,9 +169,9 @@ server {
 
 }
 
-"
 
 
+}
 .
 
 .
