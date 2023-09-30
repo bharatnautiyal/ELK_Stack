@@ -165,7 +165,7 @@ server {
     access_log /var/log/nginx/kibana-access.log;
     error_log /var/log/nginx/kibana-error.log;
 }
-```nginx
+```
 
 
 .
