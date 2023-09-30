@@ -191,9 +191,4 @@ sudo apt-get install -y apache2-utils
 
 ### Enter username in "user_name"
 
-sudo htpasswd -c /etc/nginx/htpasswd.users  user_name   
-
-#### Then Enter password.
-
-
-
+sudo htpasswd -c /etc/ngi
