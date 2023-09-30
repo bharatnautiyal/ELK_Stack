@@ -178,7 +178,8 @@ sudo systemctl reload nginx
 sudo nano /etc/nginx/sites-available/kibana
 
 ### Then Past This Configuration 
-##### Change server_name with your public ip or Host Name
+
+Change server_name with your public ip or Host Name
 
 
 ```nginx
