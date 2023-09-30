@@ -146,7 +146,6 @@ sudo nano /etc/nginx/sites-available/kibana
 
 
 server {
-
     listen 80;
     server_name 172.173.144.116;
     location / {
@@ -160,7 +159,6 @@ server {
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
-
     access_log /var/log/nginx/kibana-access.log;
     error_log /var/log/nginx/kibana-error.log;
 }
