@@ -28,7 +28,7 @@ sudo apt-get -y install nginx
 
 .
 
-## Install Elasticsearch on Ubuntu
+# Install Elasticsearch on Ubuntu
 
 sudo apt-get install apt-transport-https -y
 
@@ -95,7 +95,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install
 .
 
 
-# Download and install the Debian package of Kibana v8.10.1
+# Download and install the Debian package of Kibana.
 
 sudo apt update
 
