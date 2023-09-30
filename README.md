@@ -112,11 +112,11 @@ network.host: "localhost"
 
 
 
-## Optional if getting error while instalation
 
-### If you get any error during the instalation like this one: 
+## Optional if getting error while instalation like this one: 
 
 " dpkg: error: dpkg frontend lock was locked by another process with pid 1426 "
+
 
 #### 1. RUN This to Check for Running dpkg or apt Processes: 
 
