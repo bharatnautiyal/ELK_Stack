@@ -145,9 +145,13 @@ sudo nano /etc/nginx/sites-available/kibana
 ### Then Past This Configuration
 
 
+
+
 server {
+
     listen 80;
     server_name 172.173.144.116;
+    
     location / {
         auth_basic "Restricted Access";          # Displayed to users as the login prompt
         auth_basic_user_file /etc/nginx/.htpasswd;  # Location of the password file
@@ -159,9 +163,13 @@ server {
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
+    
     access_log /var/log/nginx/kibana-access.log;
     error_log /var/log/nginx/kibana-error.log;
+
 }
+
+
 
 
 .
