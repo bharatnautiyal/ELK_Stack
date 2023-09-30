@@ -151,17 +151,15 @@ https://www.elastic.co/guide/en/kibana/current/deb.html#deb
 
 # Creating Auth for Kibana
 
-## setingup password for kibana on nginx
-
 sudo apt-get install -y apache2-utils
 
-### You can create the .htpasswd file using the htpasswd utility. Run the following command to create the file and add a user (replace your-username with the desired username):
+#### You can create the .htpasswd file using the htpasswd utility. Run the following command to create the file and add a user (replace your-username with the desired username):
 
 sudo htpasswd -c /etc/nginx/.htpasswd your-username
 
-## Ensure Proper Ownership and Permissions:
+### Ensure Proper Ownership and Permissions:
 
-### Make sure that the .htpasswd file has the correct ownership and permissions so that Nginx can read it. You can set the ownership to the Nginx user (www-data on Ubuntu) and limit access to it:
+#### Make sure that the .htpasswd file has the correct ownership and permissions so that Nginx can read it. You can set the ownership to the Nginx user (www-data on Ubuntu) and limit access to it:
 
 sudo chown www-data:www-data /etc/nginx/.htpasswd
 
