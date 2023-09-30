@@ -39,7 +39,12 @@ sudo apt install elasticsearch -y
 
 sudo nano /etc/elasticsearch/elasticsearch.yml
 
-Uncomment the network.host line and replacing its value with localhost.
+Uncomment the network.host and http.port line replacing its value with:
+
+network.host: "localhost"
+
+http.port: 9200
+
 
 <img src="https://adamtheautomator.com/wp-content/uploads/2022/04/image-653.png" alt="image" width="700">
 
@@ -60,16 +65,6 @@ netstat -plntu | grep "9200"
 <img src="https://adamtheautomator.com/wp-content/uploads/2022/04/image-655.png" alt="image" width="900">
 
 
-## Optional
-
-Securing Elasticsearch Using UFW Firewall
-
-sudo ufw allow from 192.168.1.200 to any port 9200
-
-Now, run the ufw status command below to check the status of your UFW firewall.
-
-sudo ufw status verbose
-
 
 ## Latest Elasticsearch Debian package Can be installed from the website:
 
@@ -89,7 +84,7 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install
 
 .
 
-# Download and install the Debian package of Kibana v8.10.1 manually
+# Download and install the Debian package of Kibana v8.10.1
 
 sudo apt update
 
@@ -100,13 +95,9 @@ sudo apt install kibana
 
 sudo nano /etc/kibana/kibana.yml
 
-elasticsearch.hosts: ["http://localhost:9200"]
+http.port: 5601
 
-### Configure the server host and port for Kibana. 
-
-By default, Kibana will listen on localhost at port 5601. If you want to make Kibana accessible from outside the local machine, you can set the server.host to your server's IP address:
-
-server.host: "your_server_ip"
+network.host: "localhost"
 
 
 
@@ -144,6 +135,46 @@ https://www.elastic.co/guide/en/kibana/current/deb.html#deb
 .
 
 .
+
+# Configure the Nginx for Kibana. 
+
+sudo nano /etc/nginx/sites-available/kibana
+
+### Then Past This Configuration
+
+server {
+    listen 80;
+    server_name 172.173.144.116;
+
+
+    location / {
+        auth_basic "Restricted Access";          # Displayed to users as the login prompt
+        auth_basic_user_file /etc/nginx/.htpasswd;  # Location of the password file
+
+        proxy_pass http://localhost:5601;  # Kibana's default port
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+
+    access_log /var/log/nginx/kibana-access.log;
+    error_log /var/log/nginx/kibana-error.log;
+}
+
+
+.
+
+.
+
+.
+
+.
+
+.
+
+
 
 # Installing Logstash from Package Repositories
 
