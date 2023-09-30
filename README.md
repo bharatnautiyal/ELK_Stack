@@ -183,7 +183,7 @@ sudo nano /etc/nginx/sites-available/kibana
 ```nginx
 server {
     listen 80;
-    server_name 172.173.144.116;
+    server_name your_public_ip;       # Change it with your Public IP or Host Name
 
     location / {
         auth_basic "Restricted Access";          # Displayed to users as the login prompt
