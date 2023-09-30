@@ -154,9 +154,7 @@ sudo apt-get install -y apache2-utils
 
 sudo htpasswd -c /etc/nginx/.htpasswd your-username
 
-### Ensure Proper Ownership and Permissions:
-
-#### Make sure that the .htpasswd file has the correct ownership and permissions so that Nginx can read it. You can set the ownership to the Nginx user (www-data on Ubuntu) and limit access to it:
+### Ensure .htpasswd file has Proper Ownership and Permissions so that Nginx can read it.
 
 sudo chown www-data:www-data /etc/nginx/.htpasswd
 
