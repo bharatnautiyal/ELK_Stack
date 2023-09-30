@@ -84,6 +84,8 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install
 
 .
 
+.
+
 # Download and install the Debian package of Kibana v8.10.1
 
 sudo apt update
@@ -91,7 +93,7 @@ sudo apt update
 sudo apt install kibana
 
 
-### uncomment this in kibana.yml 
+### Uncomment this in kibana.yml 
 
 sudo nano /etc/kibana/kibana.yml
 
@@ -145,8 +147,7 @@ sudo nano /etc/nginx/sites-available/kibana
 server {
     listen 80;
     server_name 172.173.144.116;
-
-
+    
     location / {
         auth_basic "Restricted Access";          # Displayed to users as the login prompt
         auth_basic_user_file /etc/nginx/.htpasswd;  # Location of the password file
@@ -163,6 +164,8 @@ server {
     error_log /var/log/nginx/kibana-error.log;
 }
 
+
+.
 
 .
 
