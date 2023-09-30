@@ -22,6 +22,12 @@ sudo apt-get -y install nginx
 
 .
 
+.
+
+.
+
+.
+
 ## Install Elasticsearch on Ubuntu
 
 sudo apt-get install apt-transport-https -y
@@ -86,6 +92,9 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install
 
 .
 
+.
+
+
 # Download and install the Debian package of Kibana v8.10.1
 
 sudo apt update
@@ -128,6 +137,39 @@ sudo dpkg -i kibana-8.10.2-amd64.deb
 ## Latest Kibana Debian package Can be installed from the website:
 
 https://www.elastic.co/guide/en/kibana/current/deb.html#deb
+
+.
+
+.
+
+.
+
+.
+
+.
+
+
+# Creating Auth for Kibana
+
+## setingup password for kibana on nginx
+
+sudo apt-get install -y apache2-utils
+
+### You can create the .htpasswd file using the htpasswd utility. Run the following command to create the file and add a user (replace your-username with the desired username):
+
+sudo htpasswd -c /etc/nginx/.htpasswd your-username
+
+## Ensure Proper Ownership and Permissions:
+
+### Make sure that the .htpasswd file has the correct ownership and permissions so that Nginx can read it. You can set the ownership to the Nginx user (www-data on Ubuntu) and limit access to it:
+
+sudo chown www-data:www-data /etc/nginx/.htpasswd
+
+sudo chmod 644 /etc/nginx/.htpasswd
+
+sudo systemctl reload nginx
+
+
 .
 
 .
@@ -167,7 +209,6 @@ server {
 }
 ```
 
-
 .
 
 .
@@ -180,6 +221,7 @@ server {
 
 .
 
+.
 
 
 # Installing Logstash from Package Repositories
@@ -219,13 +261,3 @@ curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.10.2
 sudo dpkg -i filebeat-8.10.2-amd64.deb
 
 
-
-# Creating Auth for Kibana
-
-## setingup password for kibana on nginx
-
-sudo apt-get install -y apache2-utils
-
-### Enter username in "user_name"
-
-sudo htpasswd -c /etc/ngi
