@@ -203,6 +203,8 @@ server {
     error_log /var/log/nginx/kibana-error.log;
 }
 ```
+ ### Reload Nginx for Apply All Changes 
+sudo systemctl reload nginx
 
 .
 
