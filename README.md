@@ -240,6 +240,9 @@ echo "deb [signed-by=/usr/share/keyrings/elastic-keyring.gpg] https://artifacts.
 sudo apt-get update && sudo apt-get install logstash
 
 
+![Screenshot](/home/bharat/Pictures/Screenshot from 2023-09-29 07-32-30.png)
+
+
 ## Latest Logstash Debian package Can be installed from the website:
 
 https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#installing-logstash
