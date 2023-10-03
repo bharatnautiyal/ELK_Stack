@@ -220,7 +220,6 @@ sudo systemctl reload nginx
 
 .
 
-
 # Installing Logstash from Package Repositories
 
 #### 1. Download and install the Public Signing Key:
