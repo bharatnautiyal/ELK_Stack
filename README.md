@@ -257,4 +257,3 @@ https://www.elastic.co/guide/en/logstash/current/installing-logstash.html#instal
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-8.10.2-amd64.deb
 
 sudo dpkg -i filebeat-8.10.2-amd64.deb
-
