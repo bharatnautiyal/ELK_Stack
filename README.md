@@ -47,10 +47,11 @@ sudo nano /etc/elasticsearch/elasticsearch.yml
 
 Uncomment the network.host and http.port line replacing its value with:
 
+```nginx
 network.host: "localhost"
 
 http.port: 9200
-
+```
 
 <img src="https://adamtheautomator.com/wp-content/uploads/2022/04/image-653.png" alt="image" width="700">
 
@@ -106,10 +107,11 @@ sudo apt install kibana
 
 sudo nano /etc/kibana/kibana.yml
 
+```nginx
 http.port: 5601
 
 network.host: "localhost"
-
+```
 
 
 
