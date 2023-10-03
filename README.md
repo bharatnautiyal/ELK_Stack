@@ -95,7 +95,6 @@ https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#install
 
 .
 
-
 # Download and install the Debian package of Kibana.
 
 sudo apt update
@@ -146,7 +145,6 @@ https://www.elastic.co/guide/en/kibana/current/deb.html#deb
 .
 
 .
-
 
 # Creating Auth for Kibana
 
